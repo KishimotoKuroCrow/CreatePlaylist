@@ -1,0 +1,9 @@
+This is a Perl script to generate a set of playlists from current and its sub-directory. Every playlist contains all MP3 files from its current and sub-hierarchy.
+
+For example, if folder A has a few songs, folder B has a few songs and a sub folder B1 with a few other songs, then 4 lists would be generated:
+- A.m3u containing songs in A
+- B.m3u containing songs in B and in B1
+- B1.m3u containing songs in B1
+- AllSongs.m3u containing every song
+
+At the moment, this is Windiws specific (hasn't testing with Linux) bcause the libraries used are Win32, to set the proper character codes for languages other than English. This will at least be compatible with various sound system with playlist support.
